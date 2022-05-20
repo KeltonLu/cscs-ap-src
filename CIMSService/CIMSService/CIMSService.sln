@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIMSService", "CIMSService\CIMSService.csproj", "{525C6E34-2425-48D6-AF7E-292C1834B28B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIMSClass", "..\..\CIMSClass\CIMSClass.csproj", "{17C51F58-9B8D-4840-A059-17EF93810491}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{525C6E34-2425-48D6-AF7E-292C1834B28B}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{17C51F58-9B8D-4840-A059-17EF93810491}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.2.49:8080/tfs/tfs-jn-2016
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CIMSService\\CIMSService.csproj
+		SccProjectName1 = CIMSService
+		SccLocalPath1 = CIMSService
+		SccProjectUniqueName2 = ..\\..\\CIMSClass\\CIMSClass.csproj
+		SccProjectName2 = ../../CIMSClass
+		SccLocalPath2 = ..\\..\\CIMSClass
+	EndGlobalSection
+EndGlobal

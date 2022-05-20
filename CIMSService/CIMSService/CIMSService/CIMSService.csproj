@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{525C6E34-2425-48D6-AF7E-292C1834B28B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CIMSService</RootNamespace>
+    <AssemblyName>CIMSService</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ManifestCertificateThumbprint>5625207EABA370AEE8B79DB4B7E0A07CCFD62636</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Release\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ctcb_ldapapi_2014">
+      <HintPath>..\..\..\lib\ctcb_ldapapi_2014.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\BaseInfo042BL.cs" />
+    <Compile Include="Business\BatchBL.cs" />
+    <Compile Include="Business\CardSplitToPersoBL.cs" />
+    <Compile Include="Business\DataImport_B010BL.cs" />
+    <Compile Include="Business\DataImport_C001BL.cs" />
+    <Compile Include="Business\Depository010BL.cs" />
+    <Compile Include="Business\Depository013BL.cs" />
+    <Compile Include="Business\Depository014BL.cs" />
+    <Compile Include="Business\Finance0024BL.cs" />
+    <Compile Include="Business\InOut001BL.cs" />
+    <Compile Include="Business\InOut002BL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\InOut003BL.cs" />
+    <Compile Include="Business\InOut004BL.cs" />
+    <Compile Include="Business\InOut005BL.cs" />
+    <Compile Include="Business\InOut006BL.cs" />
+    <Compile Include="Business\LADPCheckManager.cs" />
+    <Compile Include="Business\WarningBatch.cs" />
+    <Compile Include="DAO\BaseLogic.cs" />
+    <Compile Include="DAO\DataBaseDAO.cs" />
+    <Compile Include="FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTP\FTPFactory.cs" />
+    <Compile Include="Model\CARDTYPE_STATUS.cs" />
+    <Compile Include="Model\CARDTYPE_STOCKS.cs" />
+    <Compile Include="Model\CARD_GROUP.cs" />
+    <Compile Include="Model\DAYLY_MONITOR.cs" />
+    <Compile Include="Model\EXPRESSIONS_DEFINE.cs" />
+    <Compile Include="Model\FACTORY.cs" />
+    <Compile Include="Model\Factory_Change_Import.cs" />
+    <Compile Include="Model\FORE_CHANGE_CARD_DETAIL.cs" />
+    <Compile Include="Model\FORE_CHANGE_CARD_RR05.cs" />
+    <Compile Include="Model\IMPORT_HISTORY.cs" />
+    <Compile Include="Model\Materiel_Stocks.cs" />
+    <Compile Include="Model\Materiel_Stocks_Manage.cs" />
+    <Compile Include="Model\MATERIEL_STOCKS_MOVE.cs" />
+    <Compile Include="Model\MATERIEL_STOCKS_USED.cs" />
+    <Compile Include="Model\MONTHLY_MONITOR.cs" />
+    <Compile Include="Model\Param.cs" />
+    <Compile Include="Model\PERSO_FORE_CHANGE_CARD.cs" />
+    <Compile Include="Model\PERSO_FORE_CHANGE_CARD_RR05.cs" />
+    <Compile Include="Model\PERSO_PROJECT_DETAIL.cs" />
+    <Compile Include="Model\SPECIAL_PERSO_PROJECT_IMPORT.cs" />
+    <Compile Include="Model\Subtotal_REPLACE_Import.cs" />
+    <Compile Include="Model\Users.cs" />
+    <Compile Include="Model\USERSROLE.cs" />
+    <Compile Include="Model\WAFER_CARDTYPE_USELOG.cs" />
+    <Compile Include="Public\BaseWarning.cs" />
+    <Compile Include="Public\CardTypeManager.cs" />
+    <Compile Include="Public\GlobalString.cs" />
+    <Compile Include="LOG\LogError.cs" />
+    <Compile Include="LOG\LogFactory.cs" />
+    <Compile Include="LOG\LogOperator.cs" />
+    <Compile Include="Mail\MailBase.cs" />
+    <Compile Include="Model\BATCH_MANAGE.cs" />
+    <Compile Include="Model\CARD_TYPE.cs" />
+    <Compile Include="Model\FORE_CHANGE_CARD.cs" />
+    <Compile Include="Model\Subtotal_Import.cs" />
+    <Compile Include="Model\WARNING_CONFIGURATION.cs" />
+    <Compile Include="Model\WARNING_INFO.cs" />
+    <Compile Include="CIMSBatchService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIMSBatchService.Designer.cs">
+      <DependentUpon>CIMSBatchService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\BizMessage.cs" />
+    <Compile Include="Public\MailSend.cs" />
+    <Compile Include="Public\Warning.cs" />
+    <Compile Include="Util\StringUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CIMSBatchService.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CIMSBatchService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CIMSService_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="System.Web.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CIMSClass\CIMSClass.csproj">
+      <Project>{17c51f58-9b8d-4840-a059-17ef93810491}</Project>
+      <Name>CIMSClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
